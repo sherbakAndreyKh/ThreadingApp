@@ -12,11 +12,38 @@ namespace ThreadingApp
     {
         static void Main(string[] args)
         {
-            List<EaterModel> eaters = new List<EaterModel>();
+            EatingTable table = new EatingTable();
 
-            object[] Table = new Object[10]; 
+            List<EaterModel> eaters = new List<EaterModel>(5)
+            {
+                new EaterModel("John"),
+                new EaterModel("Bill"),
+                new EaterModel("Sarah"),
+                new EaterModel("Samuel"),
+                new EaterModel("Serg")
+            };
+
+           List<CutleryModel> cutleries = new List<CutleryModel>(5)
+            {
+                new CutleryModel(),
+                new CutleryModel(),
+                new CutleryModel(),
+                new CutleryModel(),
+                new CutleryModel()
+            };
+
+            table.AddTable(cutleries, eaters);
+
+           
+
+           
+
 
 
         }
+
+       
+        
+
     }
 }
