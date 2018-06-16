@@ -8,7 +8,7 @@ namespace ThreadingApp
 {
    public class EaterModel
     {
-        private string Name { get; set; }
+        public string Name { get; set; }
 
         public EaterModel()
         {

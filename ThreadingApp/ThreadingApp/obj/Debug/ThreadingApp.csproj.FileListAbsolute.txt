@@ -1,0 +1,7 @@
+D:\Trash\ThreadingApp\ThreadingApp\ThreadingApp\bin\Debug\ThreadingApp.exe.config
+D:\Trash\ThreadingApp\ThreadingApp\ThreadingApp\bin\Debug\ThreadingApp.exe
+D:\Trash\ThreadingApp\ThreadingApp\ThreadingApp\bin\Debug\ThreadingApp.pdb
+D:\Trash\ThreadingApp\ThreadingApp\ThreadingApp\obj\Debug\ThreadingApp.csprojResolveAssemblyReference.cache
+D:\Trash\ThreadingApp\ThreadingApp\ThreadingApp\obj\Debug\ThreadingApp.csproj.CoreCompileInputs.cache
+D:\Trash\ThreadingApp\ThreadingApp\ThreadingApp\obj\Debug\ThreadingApp.exe
+D:\Trash\ThreadingApp\ThreadingApp\ThreadingApp\obj\Debug\ThreadingApp.pdb
