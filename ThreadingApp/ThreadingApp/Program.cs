@@ -12,8 +12,7 @@ namespace ThreadingApp
     {
         static void Main(string[] args)
         {
-            EatingTable table = new EatingTable();
-
+            int i = 0;   
             List<EaterModel> eaters = new List<EaterModel>(5)
             {
                 new EaterModel("John"),
@@ -23,27 +22,34 @@ namespace ThreadingApp
                 new EaterModel("Serg")
             };
 
-           List<CutleryModel> cutleries = new List<CutleryModel>(5)
+            foreach (var a in eaters)
             {
-                new CutleryModel(),
-                new CutleryModel(),
-                new CutleryModel(),
-                new CutleryModel(),
-                new CutleryModel()
-            };
+                a.Position = eaters.IndexOf(a);
+            }
 
-            table.AddTable(cutleries, eaters);
+            while (i < 10)
+            {
 
-           
+                Thread t1 = new Thread(() => eaters[0].Eat(eaters));
+                t1.Start();
 
-           
+                Thread t2 = new Thread(() => eaters[1].Eat(eaters));
+                t2.Start();
 
+                Thread t3 = new Thread(() => eaters[2].Eat(eaters));
+                t3.Start();
 
+                Thread t4 = new Thread(() => eaters[3].Eat(eaters));
+                t4.Start();
+
+                Thread t5 = new Thread(() => eaters[4].Eat(eaters));
+                t5.Start();
+
+                i++;
+            }
 
         }
 
-       
-        
 
     }
 }
